@@ -19,11 +19,7 @@ package org.springframework.integration.samples.cafe;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * @author Marius Bogoevici
- * @author Tom McCuch
- * @author Gunnar Hillert
- */
+
 public class Delivery implements Serializable{
 
 	private static final long serialVersionUID = 1L;

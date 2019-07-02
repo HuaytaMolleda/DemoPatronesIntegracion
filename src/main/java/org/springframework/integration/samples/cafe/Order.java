@@ -20,12 +20,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Mark Fisher
- * @author Marius Bogoevici
- * @author Tom McCuch
- * @author Gunnar Hillert
- */
+
 public class Order implements Serializable{
 
 	private static final long serialVersionUID = 1L;

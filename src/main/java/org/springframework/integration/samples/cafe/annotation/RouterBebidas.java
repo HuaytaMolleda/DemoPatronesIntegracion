@@ -24,7 +24,7 @@ import org.springframework.integration.annotation.Router;
  * @author Mark Fisher
  */
 @MessageEndpoint
-public class DrinkRouter {
+public class RouterBebidas {
 
 	@Router(inputChannel="drinks")
 	public String resolveOrderItemChannel(OrderItem orderItem) {

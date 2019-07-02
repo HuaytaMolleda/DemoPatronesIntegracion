@@ -18,12 +18,7 @@ package org.springframework.integration.samples.cafe;
 
 import java.io.Serializable;
 
-/**
- * @author Mark Fisher
- * @author Marius Bogoevici
- * @author Tom McCuch
- * @author Gunnar Hillert
- */
+
 public class OrderItem implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -34,7 +29,7 @@ public class OrderItem implements Serializable {
 
 	private boolean iced = false;
 
-	/** the order this item is tied to */
+
 	private int orderNumber;
 
 	// Default constructor required by Jackson Java JSON-processor

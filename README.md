@@ -1,26 +1,23 @@
-Café Sample Application - Pure SI Implementation
+Implementación de Patrones de Integración
 ================================================
 
-See the parent-level **README.md** for more details, but the flow of the implementation should follow this diagram:
+Diagrama del Demostrativo de los Patrones de Integración
 
 
 	                                                                                          Barista
-	                                                                     hotDrinks       ____________________
+	                                                                     BebidasCalientes ____________________
 	                                                                    |==========| -->|                    |
-	                     orders                   drinks               /                | prepareHotDrink()  |
-	Place Order ->Cafe->|======|->OrderSplitter->|======|->DrinkRouter                  |                    |
-	                                                                   \ coldDrinks     | prepareColdDrink() |
+	                     ordenes                   bebidas               /                | prepareHotDrink()  |
+    Lugar de Ordenamiento ->Cafes->|======|->DivisorBebidas->|======|->RouterBebidas                  |                    |
+	                                                                   \ BebidasFrias     | prepareColdDrink() |
 	                                                                    |==========| -->|                    |
 	                                                                                    |____________________|
 	
-	                                                Legend: |====| - channels
+	                                                Leyenda: |====| - Canales
 
 
-## Instructions for running the CafeDemo sample
+## Instrucciones para correr el Demostrativo
 
-The example comes with two identical configurations. One is ANNOTATION-based another is XML-based
+Para correr el ejemplo solo ejecute la clase CafeDemoApp dentro de la carpeta java/org.springframework/annotation
 
-To run this sample simply execute the CafeDemoApp classes in the **org.springframework.integration.samples.cafe.xml** or  **org.springframework.integration.samples.cafe.annotation** package.
-
-See the configuration files in the **META-INF/spring/integration** path.
 

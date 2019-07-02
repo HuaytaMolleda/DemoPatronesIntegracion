@@ -33,7 +33,11 @@ public class CafeDemoApp {
 		AbstractApplicationContext context =
 			new ClassPathXmlApplicationContext("/META-INF/spring/integration/cafeDemo-annotation.xml", CafeDemoApp.class);
 
+
+
 		Cafe cafe = (Cafe) context.getBean("cafe");
+
+		/*Si se desea agregar otra orden solo implementelo debajo del bucle for*/
 		for (int i = 1; i <= 100; i++) {
 			Order order = new Order(i);
 			order.addItem(DrinkType.LATTE, 2, false);

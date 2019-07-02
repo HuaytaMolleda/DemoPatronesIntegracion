@@ -27,7 +27,7 @@ import org.springframework.integration.annotation.Splitter;
  * @author Mark Fisher
  */
 @MessageEndpoint
-public class OrderSplitter {
+public class DivisorBebidas {
 
 	@Splitter(inputChannel="orders", outputChannel="drinks")
 	public List<OrderItem> split(Order order) {
