@@ -18,6 +18,6 @@ Diagrama del Demostrativo de los Patrones de Integración
 
 ## Instrucciones para correr el Demostrativo
 
-Para correr el ejemplo solo ejecute la clase CafeDemoApp dentro de la carpeta java/org.springframework/annotation
+Para correr el ejemplo solo ejecute la clase CafeDemoApp dentro de la carpeta  src/main/java/org.springframework/annotation
 
 
